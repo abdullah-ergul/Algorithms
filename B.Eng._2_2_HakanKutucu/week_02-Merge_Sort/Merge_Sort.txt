@@ -1,0 +1,8 @@
+Merge_Sort (Arr[1...n])
+    if n=1
+        return
+    Merge_Sort Arr[1 ... ceil(n/2)]
+    Merge_Sort Arr[ceil(n/2)+1 ... n]
+    combine 2 sorted array
+
+Runtime = θ(n . lg n)
