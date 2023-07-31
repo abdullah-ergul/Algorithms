@@ -6,3 +6,7 @@ def insertionSort(Array):
             Array[j+1] = Array[j]
             j -= 1
         Array[j+1] = key
+
+Arr = [8,2,4,9,3,6]
+insertionSort(Arr)
+print(Arr)
