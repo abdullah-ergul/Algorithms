@@ -33,7 +33,7 @@ void quickSort( int * a, int l, int r){
 }
 
 void merge(int* list,int low,int mid,int high,int size){
-    int i, mi, k, lo, temp[size];
+    int i, mi, k, lo, *temp = (int*)malloc(size*sizeof(int));
 
     lo = low;
     i = low;
@@ -141,9 +141,10 @@ int main() {
             after = (time.wMinute*60 * 1000)+(time.wSecond * 1000) + time.wMilliseconds;
             quickSortTimeSum+=after-before;
         }
-        cout << "Size: "<<  size << " Merge Sort Time: " << mergeSortTimeSum/5<<"ms";
-        cout << "  Insertion Sort Time: " << insertionSortTimeSum/5<<"ms";
-        cout << "  Quick Sort Time: " << quickSortTimeSum/5 << "ms"<<endl;
+        cout << "Size: " <<  size << endl;
+        cout << "  Merge Sort Time: " << mergeSortTimeSum/5<<"ms" << endl;
+        cout << "  Insertion Sort Time: " << insertionSortTimeSum/5<<"ms" << endl;
+        cout << "  Quick Sort Time: " << quickSortTimeSum/5 << "ms" << endl;
       /*  ofstream myfile;
         myfile.open ("ordered.txt");
         for(int k=0;k<size;k++)
