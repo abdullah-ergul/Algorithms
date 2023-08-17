@@ -1,0 +1,5 @@
+Quicksort(A, p, q)
+    if p < q
+        r = Partition(A,p,q)
+        Quicksort(A, p, r-1)
+        Quicksort(A, r+1, q)

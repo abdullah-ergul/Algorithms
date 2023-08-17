@@ -1,0 +1,12 @@
+Binary_Search (A, x)
+    p = 1
+    q = n
+    while p <= q
+        mid = ceil((p+q)/2)
+        if A[mid] = x
+            return true
+        if A[mid] < x
+            p = mid+1
+        else
+            q = mid-1
+    return false
