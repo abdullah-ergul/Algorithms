@@ -3,7 +3,6 @@ def binarySearch(array, x):
     q = len(array)-1
 
     while p <= q:
-
         mid = p + (q - p)//2
 
         if array[mid] == x:
